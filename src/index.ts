@@ -2,10 +2,10 @@ import Ant from './classes/Ant';
 import allCities from './utils/pathsDefinition'
 
 const ant1 = new Ant("1", "1", allCities);
-// const ant2 = new Ant("2", "2", allCities);
-// const ant3 = new Ant("3", "3", allCities);
-// const ant4 = new Ant("4", "4", allCities);
-// const ant5 = new Ant("5", "5", allCities);
+const ant2 = new Ant("2", "2", allCities);
+const ant3 = new Ant("3", "3", allCities);
+const ant4 = new Ant("4", "4", allCities);
+const ant5 = new Ant("5", "5", allCities);
 
 ant1.showPaths();
 ant1.calculateProb(ant1.startingPoint);

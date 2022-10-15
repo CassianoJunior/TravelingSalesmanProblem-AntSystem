@@ -12,7 +12,7 @@ export default class Ant implements AntDTO {
 
   constructor(id: string, startingPoint: string, paths: Array<CityDTO>){
     this.id = id;
-    this.cities = paths;
+    this.cities = JSON.parse(JSON.stringify(paths))
     this.startingPoint = startingPoint;
     this.totalCost = 0;
 
@@ -26,8 +26,7 @@ export default class Ant implements AntDTO {
   }
 
   private getCityPaths(cityId: string): Array<PathDTO>{
-    const startCity = this.cities.find(city => city.id === cityId);
-    return startCity.paths;
+    return this.getCity(cityId).paths;
   }
 
   public calculateTotalCost(actualCityId: string, nextCityToVisitedId: string): void{
@@ -84,7 +83,6 @@ export default class Ant implements AntDTO {
       if(pathsCitiesUnvisited.cost <= 0) return;
 
       summation += this.heuristicPheromoneProduct(pathsCitiesUnvisited.cost, pathsCitiesUnvisited.pheromone, pheromoneInfluence, heuristicInfluence);
-      
     });
 
     return summation;
