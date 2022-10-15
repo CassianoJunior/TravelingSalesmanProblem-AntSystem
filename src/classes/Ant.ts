@@ -1,5 +1,6 @@
 import Path from "../dtos/PathDTO";
 import AntDTO from '../dtos/AntDTO';
+import weighted from "weighted";
 
 export default class Ant implements AntDTO {
   id: string;
@@ -25,6 +26,22 @@ export default class Ant implements AntDTO {
     this.paths.forEach(path => {
       this.totalCost += path.cost; 
     });
+  }
+
+  public selectCity(): Path{
+    let pathsProbabilities: number[];
+    this.paths.forEach(path => {
+      pathsProbabilities.push(path.probability);
+    })
+
+    const citySelected = weighted.select(this.paths, pathsProbabilities);
+    this.paths.forEach(path => {
+      if(path.endCity === citySelected.endCity){
+        //needImplement
+      }
+    })
+
+    return citySelected;
   }
 
   public getCitiesUnvisited(): Path[]{
