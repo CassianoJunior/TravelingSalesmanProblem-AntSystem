@@ -1,7 +1,8 @@
-import Path from './PathDTO';
+import CityDTO from './CityDTO';
 
 export default interface AntDTO {
   id: string;
-  paths: Path[];
+  startingPoint: string;
+  cities: Array<CityDTO>;
   totalCost?: number;
 }

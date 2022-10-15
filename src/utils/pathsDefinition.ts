@@ -1,168 +1,193 @@
-import PathDTO from "../dtos/PathDTO";
+import CityDTO from "../dtos/CityDTO";
 
-const paths1 = [
+const city1 = {
+  id: '1',
+  visited: false,
+  paths: [
     {
-      startAnt: '1',
-      endAnt: '1',
+      destinationCity: '1',
       cost: 0,
-    } as PathDTO,
-  
+      pheromone: 1,
+    },
+
     {
-      startAnt: '1',
-      endAnt: '2',
+      destinationCity: '2',
       cost: 1,
-    } as PathDTO,
-  
+      pheromone: 1,
+    },
+
     {
-      startAnt: '1',
-      endAnt: '3',
+      destinationCity: '3',
       cost: 2.2,
-    } as PathDTO,
-  
+      pheromone: 1,
+    },
+
     {
-      startAnt: '1',
-      endAnt: '4',
+      destinationCity: '4',
       cost: 2,
-    } as PathDTO,
+      pheromone: 1,
+    },
+
+    {
+      destinationCity: '5',
+      cost: 4.1,
+      pheromone: 1,
+    },
+  ]
+} as CityDTO;
+  
+const city2 = {
+  id: '2',
+  visited: false,
+  paths: [
+    {
+      destinationCity: '1',
+      cost: 1,
+      pheromone: 1,
+    },
   
     {
-      startAnt: '1',
-      endAnt: '5',
-      cost: 4.1,
-    } as PathDTO,
+      destinationCity: '2',
+      cost: 0,
+      pheromone: 1,
+    },
     
-  ] as PathDTO[];
-  
-const paths2 = [
-{
-    startAnt: '2',
-    endAnt: '1',
-    cost: 1,
-} as PathDTO,
+    {
+      destinationCity: '3',
+      cost: 1.4,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '4',
+      cost: 2.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '5',
+      cost: 4,
+      pheromone: 1,
+    },
+  ]
 
-{
-    startAnt: '2',
-    endAnt: '2',
-    cost: 0,
-} as PathDTO,
+} as CityDTO;
 
-{
-    startAnt: '2',
-    endAnt: '3',
-    cost: 1.4,
-} as PathDTO,
+const city3 = {
+  id: '3',
+  visited: false,
+  paths: [
+    {   
+      destinationCity: '1',
+      cost: 2.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '2',
+      cost: 1.4,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '3',
+      cost: 0,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '4',
+      cost: 2.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '5',
+      cost: 3.2,
+      pheromone: 1,
+    },
+  ]
 
-{
-    startAnt: '2',
-    endAnt: '4',
-    cost: 2.2,
-} as PathDTO,
+} as CityDTO;
 
-{
-    startAnt: '2',
-    endAnt: '5',
-    cost: 4,
-} as PathDTO,
+const city4 = {
+  id: '4',
+  visited: false,
+  paths: [
+    {
+      destinationCity: '1',
+      cost: 2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '2',
+      cost: 2.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '3',
+      cost: 2.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '4',
+      cost: 0,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '5',
+      cost: 2.2,
+      pheromone: 1,
+    },
+  ]
+} as CityDTO;
 
-] as PathDTO[];
+const city5 = {
+  id: '5',
+  visited: false,
+  paths: [
+    {
+      destinationCity: '1',
+      cost: 4.1,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '2',
+      cost: 4,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '3',
+      cost: 3.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '4',
+      cost: 2.2,
+      pheromone: 1,
+    },
+    
+    {
+      destinationCity: '5',
+      cost: 0,
+      pheromone: 1,
+    },
+  ]
+} as CityDTO;
 
-const paths3 = [
-{
-    startAnt: '3',
-    endAnt: '1',
-    cost: 2.2,
-} as PathDTO,
+const allCities = [
+  city1,
+  city2,
+  city3,
+  city4,
+  city5,
+] as Array<CityDTO>;
 
-{
-    startAnt: '3',
-    endAnt: '2',
-    cost: 1.4,
-} as PathDTO,
-
-{
-    startAnt: '3',
-    endAnt: '3',
-    cost: 0,
-} as PathDTO,
-
-{
-    startAnt: '3',
-    endAnt: '4',
-    cost: 2.2,
-} as PathDTO,
-
-{
-    startAnt: '3',
-    endAnt: '5',
-    cost: 3.2,
-} as PathDTO,
-
-] as PathDTO[];
-
-const paths4 = [
-{
-    startAnt: '4',
-    endAnt: '1',
-    cost: 2,
-} as PathDTO,
-
-{
-    startAnt: '4',
-    endAnt: '2',
-    cost: 2.2,
-} as PathDTO,
-
-{
-    startAnt: '4',
-    endAnt: '3',
-    cost: 2.2,
-} as PathDTO,
-
-{
-    startAnt: '4',
-    endAnt: '4',
-    cost: 0,
-} as PathDTO,
-
-{
-    startAnt: '4',
-    endAnt: '5',
-    cost: 2.2,
-} as PathDTO,
-
-] as PathDTO[];
-
-const paths5 = [
-{
-    startAnt: '5',
-    endAnt: '1',
-    cost: 4.1,
-} as PathDTO,
-
-{
-    startAnt: '5',
-    endAnt: '2',
-    cost: 4,
-} as PathDTO,
-
-{
-    startAnt: '5',
-    endAnt: '3',
-    cost: 3.2,
-} as PathDTO,
-
-{
-    startAnt: '5',
-    endAnt: '4',
-    cost: 2.2,
-} as PathDTO,
-
-{
-    startAnt: '5',
-    endAnt: '5',
-    cost: 0,
-} as PathDTO,
-
-] as PathDTO[];
-
-export { paths1, paths2, paths3, paths4, paths5 }
+export default allCities;
