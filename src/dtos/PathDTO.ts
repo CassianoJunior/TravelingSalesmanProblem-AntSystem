@@ -1,6 +1,6 @@
 export default interface PathDTO {
-  startAnt: string;
-  endAnt: string;
+  startCity: string;
+  endCity: string;
   cost: number;
   pheromone?: number;
   probability?: number;
