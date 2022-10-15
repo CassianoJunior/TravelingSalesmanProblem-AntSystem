@@ -2,32 +2,32 @@ import PathDTO from "../dtos/PathDTO";
 
 const paths1 = [
     {
-      startAnt: '1',
-      endAnt: '1',
+      startCity: '1',
+      endCity: '1',
       cost: 0,
     } as PathDTO,
   
     {
-      startAnt: '1',
-      endAnt: '2',
+      startCity: '1',
+      endCity: '2',
       cost: 1,
     } as PathDTO,
   
     {
-      startAnt: '1',
-      endAnt: '3',
+      startCity: '1',
+      endCity: '3',
       cost: 2.2,
     } as PathDTO,
   
     {
-      startAnt: '1',
-      endAnt: '4',
+      startCity: '1',
+      endCity: '4',
       cost: 2,
     } as PathDTO,
   
     {
-      startAnt: '1',
-      endAnt: '5',
+      startCity: '1',
+      endCity: '5',
       cost: 4.1,
     } as PathDTO,
     
@@ -35,32 +35,32 @@ const paths1 = [
   
 const paths2 = [
 {
-    startAnt: '2',
-    endAnt: '1',
+    startCity: '2',
+    endCity: '1',
     cost: 1,
 } as PathDTO,
 
 {
-    startAnt: '2',
-    endAnt: '2',
+    startCity: '2',
+    endCity: '2',
     cost: 0,
 } as PathDTO,
 
 {
-    startAnt: '2',
-    endAnt: '3',
+    startCity: '2',
+    endCity: '3',
     cost: 1.4,
 } as PathDTO,
 
 {
-    startAnt: '2',
-    endAnt: '4',
+    startCity: '2',
+    endCity: '4',
     cost: 2.2,
 } as PathDTO,
 
 {
-    startAnt: '2',
-    endAnt: '5',
+    startCity: '2',
+    endCity: '5',
     cost: 4,
 } as PathDTO,
 
@@ -68,32 +68,32 @@ const paths2 = [
 
 const paths3 = [
 {
-    startAnt: '3',
-    endAnt: '1',
+    startCity: '3',
+    endCity: '1',
     cost: 2.2,
 } as PathDTO,
 
 {
-    startAnt: '3',
-    endAnt: '2',
+    startCity: '3',
+    endCity: '2',
     cost: 1.4,
 } as PathDTO,
 
 {
-    startAnt: '3',
-    endAnt: '3',
+    startCity: '3',
+    endCity: '3',
     cost: 0,
 } as PathDTO,
 
 {
-    startAnt: '3',
-    endAnt: '4',
+    startCity: '3',
+    endCity: '4',
     cost: 2.2,
 } as PathDTO,
 
 {
-    startAnt: '3',
-    endAnt: '5',
+    startCity: '3',
+    endCity: '5',
     cost: 3.2,
 } as PathDTO,
 
@@ -101,32 +101,32 @@ const paths3 = [
 
 const paths4 = [
 {
-    startAnt: '4',
-    endAnt: '1',
+    startCity: '4',
+    endCity: '1',
     cost: 2,
 } as PathDTO,
 
 {
-    startAnt: '4',
-    endAnt: '2',
+    startCity: '4',
+    endCity: '2',
     cost: 2.2,
 } as PathDTO,
 
 {
-    startAnt: '4',
-    endAnt: '3',
+    startCity: '4',
+    endCity: '3',
     cost: 2.2,
 } as PathDTO,
 
 {
-    startAnt: '4',
-    endAnt: '4',
+    startCity: '4',
+    endCity: '4',
     cost: 0,
 } as PathDTO,
 
 {
-    startAnt: '4',
-    endAnt: '5',
+    startCity: '4',
+    endCity: '5',
     cost: 2.2,
 } as PathDTO,
 
@@ -134,32 +134,32 @@ const paths4 = [
 
 const paths5 = [
 {
-    startAnt: '5',
-    endAnt: '1',
+    startCity: '5',
+    endCity: '1',
     cost: 4.1,
 } as PathDTO,
 
 {
-    startAnt: '5',
-    endAnt: '2',
+    startCity: '5',
+    endCity: '2',
     cost: 4,
 } as PathDTO,
 
 {
-    startAnt: '5',
-    endAnt: '3',
+    startCity: '5',
+    endCity: '3',
     cost: 3.2,
 } as PathDTO,
 
 {
-    startAnt: '5',
-    endAnt: '4',
+    startCity: '5',
+    endCity: '4',
     cost: 2.2,
 } as PathDTO,
 
 {
-    startAnt: '5',
-    endAnt: '5',
+    startCity: '5',
+    endCity: '5',
     cost: 0,
 } as PathDTO,
 
