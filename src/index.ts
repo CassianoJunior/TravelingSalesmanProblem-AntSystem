@@ -10,3 +10,4 @@ const ant5 = new Ant("5", paths5);
 
 ant1.showPaths();
 console.log(ant1.totalCost);
+console.log(ant1.paths.at(0).pheromone);
