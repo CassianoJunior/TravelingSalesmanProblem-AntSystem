@@ -1,8 +1,6 @@
 export default interface PathDTO {
-  startCity: string;
-  endCity: string;
-  cost: number;
-  visited: boolean;
-  pheromone?: number;
-  probability?: number;
+  destinationCity: string,
+  cost: number,
+  pheromone?: number,
+  probability?: number,
 }

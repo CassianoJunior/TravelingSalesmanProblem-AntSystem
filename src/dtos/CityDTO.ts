@@ -1,4 +1,8 @@
+import PathDTO from "./PathDTO";
+
 export default interface CityDTO {
-  id: number;
+  id: string;
+  visited: boolean;
+  paths: Array<PathDTO>;
   antAmount: number;
 }
