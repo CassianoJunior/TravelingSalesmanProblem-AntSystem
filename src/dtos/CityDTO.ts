@@ -4,4 +4,5 @@ export default interface CityDTO {
   id: string;
   visited: boolean;
   paths: Array<PathDTO>;
+  antAmount: number;
 }

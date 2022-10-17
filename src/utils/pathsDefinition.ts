@@ -191,3 +191,4 @@ const allCities = [
 ] as Array<CityDTO>;
 
 export default allCities;
+
