@@ -10,6 +10,8 @@ import {
   spreadAntsForCities,
 } from '../utils/setParameters';
 
+import { describe, expect, it } from 'vitest';
+
 describe('test for paths', () => {
   it('should return the correct paths', () => {
     const instance = [
